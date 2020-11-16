@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    height: 100%;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fondo{
+    background-image: url(./img/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.titulo{
+    height: 100vh;
+}
+
+.titulo h1 span{
+    background-color: red;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.titulo p{
+    border-radius: 8px;
+    background-color:#00a39a;
+    font-weight: 900;
+}
+
+.titulo i{
+    font-size: 3rem;
+}
+
+/* responsive */
+@media(min-width:360px){
+    .titulo h1{
+        font-size: 2rem;
+    } 
+    .titulo h1 span{
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
+}
+
+@media(min-width:520px){
+    .titulo h1{
+        font-size: 4rem;
+    }
+
+    .titulo h1 span{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .titulo p{
+        font-size: 2rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+}
+
+.cita{
+    background-color: #00a39a;
+    border: solid 1px;
+}
+
+.cita p{
+    font-family: 'Acme', sans-serif;
+    font-weight: 900;
+}
+
+.cita span{
+    color: #ffffff;
+    font-weight: 600;
 }

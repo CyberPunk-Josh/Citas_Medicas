@@ -1,3 +1,6 @@
+### Acerca de este proyecto
+Este proyecto fue construido en react, simulando la creacion de citas medicas y poder agendarlas
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
